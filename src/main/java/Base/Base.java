@@ -34,7 +34,7 @@ public class Base {
 		
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://www.google.co.uk");
