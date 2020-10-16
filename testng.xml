@@ -3,7 +3,11 @@
 
 <suite name="Regression Test Suite">
 
-
+<listeners>
+<listener class-name="Listener.CustomListener"/>
+<listener class-name="Listener.MyTransformer"/>
+<listener class-name="Listener.ExtentReportListener"/>
+</listeners>
   
   <test thread-count="5" name="RetryTest">
   

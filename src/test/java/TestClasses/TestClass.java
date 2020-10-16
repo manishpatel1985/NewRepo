@@ -22,19 +22,10 @@ import Base.Base;
 
 public class TestClass extends Base {
 	
-
-
-	
-	
-	
-	
-	
-
-	@BeforeMethod
+@BeforeMethod
 	public void setUp() throws MalformedURLException {
 		initialisation();
-		
-	}
+}
 	
 	@Test(priority=1)
 	
