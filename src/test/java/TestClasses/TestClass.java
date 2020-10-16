@@ -3,6 +3,8 @@ package TestClasses;
 
 
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
@@ -29,7 +31,7 @@ public class TestClass extends Base {
 	
 
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() throws MalformedURLException {
 		initialisation();
 		
 	}

@@ -6,14 +6,13 @@
     <listener class-name="Listener.MyTransformer"/>
     <listener class-name="Listener.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="RetryTest(failed)">
+  <test name="RetryTest(failed)">
     <classes>
       <class name="TestClasses.TestClass">
         <methods>
-          <include name="clickTest"/>
-          <include name="setExtent"/>
+          <include name="loginTest"/>
+          <include name="serchTest"/>
           <include name="setUp"/>
-          <include name="endReport"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- TestClasses.TestClass -->
