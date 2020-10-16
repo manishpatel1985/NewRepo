@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Test Suite" duration-ms="15717" started-at="2020-10-16T13:37:34Z" finished-at="2020-10-16T13:37:49Z">
+  <suite name="Regression Test Suite" duration-ms="16279" started-at="2020-10-16T13:39:18Z" finished-at="2020-10-16T13:39:34Z">
     <groups>
     </groups>
-    <test name="RetryTest" duration-ms="15717" started-at="2020-10-16T13:37:34Z" finished-at="2020-10-16T13:37:49Z">
+    <test name="RetryTest" duration-ms="16279" started-at="2020-10-16T13:39:18Z" finished-at="2020-10-16T13:39:34Z">
       <class name="TestClasses.TestClass">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="setUp" is-config="true" duration-ms="7979" started-at="2020-10-16T14:37:34Z" finished-at="2020-10-16T14:37:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="setUp" is-config="true" duration-ms="8553" started-at="2020-10-16T14:39:18Z" finished-at="2020-10-16T14:39:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="serchTest()[pri:1, instance:TestClasses.TestClass@3d299e3]" name="serchTest" duration-ms="80" started-at="2020-10-16T14:37:42Z" finished-at="2020-10-16T14:37:42Z">
+        <test-method status="PASS" signature="serchTest()[pri:1, instance:TestClasses.TestClass@3d299e3]" name="serchTest" duration-ms="83" started-at="2020-10-16T14:39:27Z" finished-at="2020-10-16T14:39:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serchTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="tearDown" is-config="true" duration-ms="104" started-at="2020-10-16T14:37:42Z" finished-at="2020-10-16T14:37:42Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="tearDown" is-config="true" duration-ms="80" started-at="2020-10-16T14:39:27Z" finished-at="2020-10-16T14:39:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="setUp" is-config="true" duration-ms="7002" started-at="2020-10-16T14:37:42Z" finished-at="2020-10-16T14:37:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="setUp" is-config="true" duration-ms="7055" started-at="2020-10-16T14:39:27Z" finished-at="2020-10-16T14:39:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:TestClasses.TestClass@3d299e3]" name="loginTest" duration-ms="101" started-at="2020-10-16T14:37:49Z" finished-at="2020-10-16T14:37:49Z">
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:TestClasses.TestClass@3d299e3]" name="loginTest" duration-ms="74" started-at="2020-10-16T14:39:34Z" finished-at="2020-10-16T14:39:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="tearDown" is-config="true" duration-ms="104" started-at="2020-10-16T14:37:49Z" finished-at="2020-10-16T14:37:49Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="tearDown" is-config="true" duration-ms="84" started-at="2020-10-16T14:39:34Z" finished-at="2020-10-16T14:39:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

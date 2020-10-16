@@ -39,7 +39,7 @@ public class Base {
 	public static void initialisation() throws MalformedURLException {
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setBrowserName("firefox");
+		capabilities.setBrowserName("Firefox");
 		capabilities.setBrowserName("chrome");
 		capabilities.setPlatform(Platform.WINDOWS);
 		
