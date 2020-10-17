@@ -2,36 +2,84 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Test Suite" duration-ms="16279" started-at="2020-10-16T13:39:18Z" finished-at="2020-10-16T13:39:34Z">
+  <suite name="Regression Test Suite" duration-ms="24235" started-at="2020-10-17T20:38:20Z" finished-at="2020-10-17T20:38:44Z">
     <groups>
     </groups>
-    <test name="RetryTest" duration-ms="16279" started-at="2020-10-16T13:39:18Z" finished-at="2020-10-16T13:39:34Z">
+    <test name="Sauce Test - FF" duration-ms="17003" started-at="2020-10-17T20:38:20Z" finished-at="2020-10-17T20:38:37Z">
       <class name="TestClasses.TestClass">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="setUp" is-config="true" duration-ms="8553" started-at="2020-10-16T14:39:18Z" finished-at="2020-10-16T14:39:26Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestClasses.TestClass@756cf158]" name="setUp" is-config="true" duration-ms="15199" started-at="2020-10-17T21:38:20Z" finished-at="2020-10-17T21:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[79.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestClasses.TestClass.serchTest()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="serchTest()[pri:1, instance:TestClasses.TestClass@3d299e3]" name="serchTest" duration-ms="83" started-at="2020-10-16T14:39:27Z" finished-at="2020-10-16T14:39:27Z">
+        <test-method status="PASS" signature="serchTest()[pri:1, instance:TestClasses.TestClass@756cf158]" name="serchTest" duration-ms="1275" started-at="2020-10-17T21:38:36Z" finished-at="2020-10-17T21:38:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serchTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="tearDown" is-config="true" duration-ms="80" started-at="2020-10-16T14:39:27Z" finished-at="2020-10-16T14:39:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="setUp" is-config="true" duration-ms="7055" started-at="2020-10-16T14:39:27Z" finished-at="2020-10-16T14:39:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:TestClasses.TestClass@3d299e3]" name="loginTest" duration-ms="74" started-at="2020-10-16T14:39:34Z" finished-at="2020-10-16T14:39:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestClasses.TestClass@3d299e3]" name="tearDown" is-config="true" duration-ms="84" started-at="2020-10-16T14:39:34Z" finished-at="2020-10-16T14:39:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestClasses.TestClass@756cf158]" name="tearDown" is-config="true" duration-ms="222" started-at="2020-10-17T21:38:37Z" finished-at="2020-10-17T21:38:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestClasses.TestClass -->
-    </test> <!-- RetryTest -->
+    </test> <!-- Sauce Test - FF -->
+    <test name="Sauce Test - Chrome" duration-ms="7164" started-at="2020-10-17T20:38:37Z" finished-at="2020-10-17T20:38:44Z">
+      <class name="TestClasses.TestClass">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestClasses.TestClass@1849db1a]" name="setUp" is-config="true" duration-ms="5088" started-at="2020-10-17T21:38:37Z" finished-at="2020-10-17T21:38:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[macOS 10.15]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[85.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestClasses.TestClass.serchTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="serchTest()[pri:1, instance:TestClasses.TestClass@1849db1a]" name="serchTest" duration-ms="1899" started-at="2020-10-17T21:38:42Z" finished-at="2020-10-17T21:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serchTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestClasses.TestClass@1849db1a]" name="tearDown" is-config="true" duration-ms="162" started-at="2020-10-17T21:38:44Z" finished-at="2020-10-17T21:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestClasses.TestClass -->
+    </test> <!-- Sauce Test - Chrome -->
   </suite> <!-- Regression Test Suite -->
 </testng-results>

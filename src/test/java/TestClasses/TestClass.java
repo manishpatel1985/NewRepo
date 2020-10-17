@@ -4,53 +4,44 @@ package TestClasses;
 
 
 import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 
 import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.BeforeMethod;
-
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
 
 import Base.Base;
+import Base.NewBaseClass;
 
 
 
-public class TestClass extends Base {
+public class TestClass extends NewBaseClass  {
+
+
+
 	
-@BeforeMethod
-	public void setUp() throws MalformedURLException {
-		initialisation();
-}
 	
 	@Test(priority=1)
-	
 	public void serchTest() {
+		driver.get("http://www.google.co.uk");
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "Google");
-		
-	}
-	
-	@Test(priority=2)
-	public void loginTest() {
-		boolean btn =driver.findElement(By.xpath("//div[@class='tfB0Bf']")).isEnabled();
-		Assert.assertTrue(btn);
-		
 	}
 	
 	
 	
 	
-	@AfterMethod
-	public void tearDown() {
-		
-		
-		driver.quit();
-	}
+	
+	
 	
 	
 }

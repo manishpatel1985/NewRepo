@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Regression_Test_Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Regression_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test_Suite" title="TestClasses.TestClass" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Test_Suite" title="TestClasses.TestClass" hash-for-method="serchTest">serchTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -130,9 +130,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
+                  <a name="serchTest">
+                  </a> <!-- serchTest -->
+                  <span class="method-name">serchTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -159,11 +159,22 @@
     &lt;listener class-name=&quot;Listener.MyTransformer&quot;/&gt;
     &lt;listener class-name=&quot;Listener.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;RetryTest&quot;&gt;
+  &lt;test name=&quot;Sauce Test - FF&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;version&quot; value=&quot;79.0&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;windows 10&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestClasses.TestClass&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- RetryTest --&gt;
+  &lt;/test&gt; &lt;!-- Sauce Test - FF --&gt;
+  &lt;test name=&quot;Sauce Test - Chrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;version&quot; value=&quot;85.0&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;macOS 10.15&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestClasses.TestClass&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Sauce Test - Chrome --&gt;
 &lt;/suite&gt; &lt;!-- Regression Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,7 +186,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">RetryTest (1 class)</span>
+                <span class="test-name">Sauce Test - FF (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Sauce Test - Chrome (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,16 +219,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'serchTest')
 data.setCell(0, 2, 'TestClasses.TestClass')
-data.setCell(0, 3, 83);
+data.setCell(0, 3, 1899);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginTest')
+data.setCell(1, 1, 'serchTest')
 data.setCell(1, 2, 'TestClasses.TestClass')
-data.setCell(1, 3, 74);
+data.setCell(1, 3, 1275);
 window.suiteTableData['Regression_Test_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 157 ms</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Regression_Test_Suite">
               </div> <!-- times-div-Regression_Test_Suite -->
             </div> <!-- times-div -->
@@ -242,28 +256,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestClasses.TestClass</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setUp(firefox, windows 10, 79.0, public void TestClasses.TestClass.serchTest())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">serchTest</span>
-                <span class="method-start">8835 ms</span>
+                <span class="method-start">15391 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8934 ms</span>
+                <span class="method-start">16710 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">9022 ms</span>
+                <span class="method-name">setUp(chrome, macOS 10.15, 85.0, public void TestClasses.TestClass.serchTest())</span>
+                <span class="method-start">17015 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">16078 ms</span>
+                <span class="method-name">serchTest</span>
+                <span class="method-start">22104 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16159 ms</span>
+                <span class="method-start">24012 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

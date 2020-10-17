@@ -6,16 +6,34 @@
     <listener class-name="Listener.MyTransformer"/>
     <listener class-name="Listener.ExtentReportListener"/>
   </listeners>
-  <test name="RetryTest(failed)">
+  <test name="Sauce Test - FF(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="79.0"/>
+    <parameter name="platform" value="windows 10"/>
     <classes>
       <class name="TestClasses.TestClass">
         <methods>
-          <include name="loginTest"/>
-          <include name="serchTest"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="serchTest"/>
         </methods>
       </class> <!-- TestClasses.TestClass -->
     </classes>
-  </test> <!-- RetryTest(failed) -->
+  </test> <!-- Sauce Test - FF(failed) -->
+  <test name="Sauce Test - Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="85.0"/>
+    <parameter name="platform" value="macOS 10.15"/>
+    <classes>
+      <class name="TestClasses.TestClass">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="serchTest"/>
+        </methods>
+      </class> <!-- TestClasses.TestClass -->
+    </classes>
+  </test> <!-- Sauce Test - Chrome(failed) -->
 </suite> <!-- Failed suite [Regression Test Suite] -->

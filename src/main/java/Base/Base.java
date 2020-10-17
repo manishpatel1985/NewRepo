@@ -24,8 +24,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
+
 
 import Listener.WebEventListener;
 
@@ -38,15 +37,21 @@ public class Base {
 	
 	public static void initialisation() throws MalformedURLException {
 		
+		
+		
+		
+		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setBrowserName("Firefox");
-		capabilities.setBrowserName("chrome");
+		capabilities.setBrowserName("firefox");
+		//capabilities.setBrowserName("chrome");
+	
 		capabilities.setPlatform(Platform.WINDOWS);
 		
 		ChromeOptions options = new ChromeOptions();
 		options.merge(capabilities);
 		
-		String huburl= "http://192.168.0.28:12566/wd/hub";
+		String huburl= "http://192.168.0.28:26671/wd/hub";
+		String huburl1= "http://192.168.0.28:46686/wd/hub";
 		
 		
 		driver=new RemoteWebDriver(new URL(huburl),options);
