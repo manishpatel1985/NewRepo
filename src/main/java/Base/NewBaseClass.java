@@ -11,7 +11,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.OutputType;
@@ -28,11 +27,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class NewBaseClass {
+	/*
+	 * This is the Actual Base Class
+	 */
+	
 	
 	public WebDriver driver;
 
