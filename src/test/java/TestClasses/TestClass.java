@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 
 
-import Base.Base;
+
 import Base.NewBaseClass;
 
 

@@ -4,9 +4,10 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import Base.Base;
 
-public class CustomListener extends Base implements ITestListener {
+import Base.NewBaseClass;
+
+public class CustomListener extends NewBaseClass implements ITestListener {
 
 	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub

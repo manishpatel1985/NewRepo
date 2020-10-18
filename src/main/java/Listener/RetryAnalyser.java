@@ -3,9 +3,10 @@ package Listener;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-import Base.Base;
 
-public class RetryAnalyser extends Base implements IRetryAnalyzer{
+import Base.NewBaseClass;
+
+public class RetryAnalyser extends NewBaseClass implements IRetryAnalyzer{
 	
 	int count = 0;
 	int retrylimit = 1;

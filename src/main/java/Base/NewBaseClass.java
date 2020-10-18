@@ -35,7 +35,7 @@ public class NewBaseClass {
 	 */
 	
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 
 	@Parameters({"browser", "platform", "version"})
 	@BeforeMethod
@@ -79,5 +79,20 @@ public class NewBaseClass {
 	public void tearDown() {
 		driver.quit();
 	}
+	
+	
+	public static void failedScreenShots(String methodname) {
+		String datename = new SimpleDateFormat("yyyyMMDD").format(new Date());
+		
+		File screenshot=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(screenshot, new File("C:\\Selenium\\manishSelenium\\manishSelenium\\FailedScreenShotMethods\\target\\"
+		+methodname+datename+".png"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
 
 }
