@@ -68,6 +68,7 @@ public class NewBaseClass {
 		try {
 			driver = new RemoteWebDriver(new URL("https://ondemand.eu-central-1.saucelabs.com:443/wd/hub"), cap);
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			driver.get("http://www.google.co.uk");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}

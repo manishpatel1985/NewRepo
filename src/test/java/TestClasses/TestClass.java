@@ -26,13 +26,8 @@ import Base.NewBaseClass;
 
 public class TestClass extends NewBaseClass  {
 
-
-
-	
-	
 	@Test(priority=1)
 	public void serchTest() {
-		driver.get("http://www.google.co.uk");
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "Google");
 	}
